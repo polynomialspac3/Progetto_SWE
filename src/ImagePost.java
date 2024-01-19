@@ -5,7 +5,8 @@ public class ImagePost extends AbstractImagePost{
     public ImagePost(PostTag tag) {
         this.tag = tag;
         this.type = PostType.IMAGE;
-        //System.out.println("ho creato un immmmpost");
+        this.setLikes();
+        this.likes = this.getLikes();
     }
 
 

@@ -31,5 +31,15 @@ class ObserverTest {
 
     }
 
+    @Test
+    void startegy() {
+        Observer observer = new Observer();
+        VideoPost vp = new VideoPost(PostTag.RANDOM);
+        observer.update(vp);
+        assertNotNull(observer.SetStrategy(vp));
 
-}
+        CondividiStrategy strategy = observer.SetStrategy(vp);
+        assertTrue(strategy instanceof ConcreteFactory2);
+
+    }
+};

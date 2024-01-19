@@ -19,21 +19,15 @@ public class Main {
         for(int i=0; i<post_iniziali; i++){
             if (i < post_iniziali/4) {
                 VideoPost videop = new VideoPost((PostTag.TRENDING));
-                videop.setLikes();
-                videop.setViews();
                 archive[i] = videop;
             }else if(i < post_iniziali/2){
                 VideoPost videop = new VideoPost((PostTag.RANDOM));
-                videop.setLikes();
-                videop.setViews();
                 archive[i] = videop;
             } else if(i <(post_iniziali/4)*3){
                 ImagePost imagep = new ImagePost((PostTag.RANDOM));
-                imagep.setLikes();
                 archive[i] = imagep;
             } else if (i<post_iniziali) {
                 ImagePost imagep = new ImagePost((PostTag.TRENDING));
-                imagep.setLikes();
                 archive[i] = imagep;
             }
         }
@@ -58,19 +52,11 @@ public class Main {
 
         mostliked.notifyObserver(o);
         liked = o.executeStrategy();
-        liked.setLikes();
 
-        if(liked.getType() == PostType.VIDEO){
-            ((VideoPost) liked).setViews();
-        }
 
         mostviewed.notifyObserver(o);
         viewed = o.executeStrategy();
-        viewed.setLikes();
 
-        if(viewed.getType() == PostType.VIDEO){
-            ((VideoPost) viewed).setViews();
-        }
 
         archive[post_iniziali] = liked;
         archive[post_iniziali+1] = viewed;

@@ -6,7 +6,6 @@ public abstract class AbstractImagePost implements Post{
     int likes;
     @Override
     public int getLikes() {
-        //System.out.println("likes" + likes);
         return likes;
     }
 

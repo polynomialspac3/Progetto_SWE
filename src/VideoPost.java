@@ -7,7 +7,10 @@ public class VideoPost extends AbstractVideoPost{
     public VideoPost(PostTag tag) {
         this.tag = tag;
         this.type = PostType.VIDEO;
-        //System.out.println("ho creato un video");
+        this.setLikes();
+        this.likes = this.getLikes();
+        this.setViews();
+        this.views = this.getViews();
     }
 
     @Override

@@ -19,7 +19,6 @@ public abstract class AbstractVideoPost implements Post {
     }
 
     public int getViews() {
-        //System.out.println("views" +views);
         return views;
     }
 
