@@ -3,6 +3,7 @@
 public abstract class AbstractVideoPost implements Post {
     int views;
     int likes;
+
     @Override
     public int getLikes() {
         //System.out.println("likes" +likes);

@@ -7,9 +7,9 @@ public class VideoPost extends AbstractVideoPost{
     public VideoPost(PostTag tag) {
         this.tag = tag;
         this.type = PostType.VIDEO;
-        this.setLikes();
+        setLikes();
         this.likes = this.getLikes();
-        this.setViews();
+        setViews();
         this.views = this.getViews();
     }
 

@@ -67,7 +67,7 @@ public class Main {
             String tag = String.valueOf(archive[i].getTag());
             if(archive[i].getType()==PostType.VIDEO){
                 int v = ((VideoPost)archive[i]).getViews();
-                System.out.println("post numero " + i  + "  " + archive[i] +" tags " + tag + " likes  " + archive[i].getLikes() + "  views " + v);
+                System.out.println("post numero " + i  + "   " + archive[i] +" tags " + tag + " likes  " + archive[i].getLikes() + "  views " + v);
             }else {
                 System.out.println("post numero " + i + "  " + archive[i]  +" tags " + tag + " likes  " + archive[i].getLikes());
             }

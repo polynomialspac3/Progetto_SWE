@@ -4,7 +4,7 @@ public class Observer implements ObserverInterface {
     private CondividiStrategy strategy;
     ConcreteFactory2 randomfactory;
     ConcreteFactory1 trendingfactory;
-    Post post, newpost;
+    private Post post, newpost;
     PostTag ptg;
     PostType pty;
 

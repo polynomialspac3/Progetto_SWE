@@ -1,11 +1,11 @@
 public class ImagePost extends AbstractImagePost{
-    PostTag tag;
-    PostType type;
+    private PostTag tag;
+    private PostType type;
 
     public ImagePost(PostTag tag) {
         this.tag = tag;
         this.type = PostType.IMAGE;
-        this.setLikes();
+        setLikes();
         this.likes = this.getLikes();
     }
 
