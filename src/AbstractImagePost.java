@@ -2,7 +2,7 @@
 //abstract product b
 
 public abstract class AbstractImagePost implements Post{
-    int likes;
+    protected int likes;
     @Override
     public int getLikes() {
         return likes;

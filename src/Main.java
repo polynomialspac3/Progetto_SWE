@@ -5,7 +5,6 @@ public class Main {
         Observer o = new Observer();
         //VideoPost vp = new VideoPost(PostTag.RANDOM);
         //ImagePost ip = new ImagePost(PostTag.RANDOM);
-        //int vlikes, vviews, ilikes = 0;
         Post liked, viewed;
         int nuovi = 2;
         int post_iniziali = 20;

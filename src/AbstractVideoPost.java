@@ -1,8 +1,8 @@
 
 // abstract product a
 public abstract class AbstractVideoPost implements Post {
-    int views;
-    int likes;
+    protected int views;
+    protected int likes;
 
     @Override
     public int getLikes() {

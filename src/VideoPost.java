@@ -1,8 +1,8 @@
 
 
 public class VideoPost extends AbstractVideoPost{
-    PostTag tag;
-    PostType type;
+    private PostTag tag;
+    private PostType type;
 
     public VideoPost(PostTag tag) {
         this.tag = tag;

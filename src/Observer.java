@@ -2,11 +2,11 @@ import javax.naming.Context;
 
 public class Observer implements ObserverInterface {
     private CondividiStrategy strategy;
-    ConcreteFactory2 randomfactory;
-    ConcreteFactory1 trendingfactory;
+    protected ConcreteFactory2 randomfactory;
+    protected ConcreteFactory1 trendingfactory;
     private Post post, newpost;
-    PostTag ptg;
-    PostType pty;
+    protected PostTag ptg;
+    protected PostType pty;
 
     @Override
     public void update(Post post) {
